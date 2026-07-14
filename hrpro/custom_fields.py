@@ -72,7 +72,7 @@ def get_custom_fields():
                 fieldtype="Time",
                 insert_after="late_entry",
                 read_only=1,
-                depends_on="eval:doc.late_entry == 1"
+                depends_on="eval:doc.late_entry == 1",
                 module="HRPRO"
             ),
             dict(
@@ -81,7 +81,7 @@ def get_custom_fields():
                 fieldtype="Time",
                 insert_after="early_exit",
                 read_only=1,
-                depends_on="eval:doc.early_exit == 1"
+                depends_on="eval:doc.early_exit == 1",
                 module="HRPRO"
             ),
 
