@@ -88,9 +88,9 @@ app_license = "mit"
 # before_install = "hrpro.install.before_install"
 # after_install = "hrpro.install.after_install"
 
-before_install = ["hrpro.install.before_install"]
+# before_install = ["hrpro.install.before_install"]
 
-after_migrate = ["hrpro.after_migrate.create_fields","hrpro.after_migrate.create_property_setters"]
+after_migrate = ["hrpro.after_migrate.create_fields"]
 
 # Uninstallation
 # ------------
