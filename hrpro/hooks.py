@@ -88,6 +88,10 @@ app_license = "mit"
 # before_install = "hrpro.install.before_install"
 # after_install = "hrpro.install.after_install"
 
+before_install = ["hrpro.install.before_install"]
+
+after_migrate = ["hrpro.after_migrate.create_fields","hrpro.after_migrate.create_property_setters"]
+
 # Uninstallation
 # ------------
 
@@ -145,6 +149,52 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+
+#fixtures
+
+export_modules = [
+    "HRPRO"
+]
+
+export_workspace_sidebar = ["HRPRO"]
+
+# export_roles = []
+
+export_custom_html_blocks = ["HRPRO Dashboard"]
+
+# export_workflows = []
+
+export_desktop_icon = ["HRPRO"]
+
+export_workspace_sidebar = ["HRPRO"]
+
+
+fixtures = [
+    {"dt": "Client Script", "filters": [["module", "in", export_modules]]},
+    # {"dt": "Custom Field", "filters": [["module", "in", export_modules]]},
+    # {"dt": "Property Setter", "filters": [["module", "in", export_modules]]},
+    {"dt": "Workspace", "filters": [["module", "in", export_modules]]},
+    {"dt": "Workspace Sidebar", "filters": [["name", "in", export_workspace_sidebar]]},
+    {"dt": "Print Format", "filters": [["module", "in", export_modules]]},
+    {"dt": "Page", "filters": [["module", "in", export_modules]]},
+    {"dt": "Report", "filters": [["module", "in", export_modules]]},
+    # {"dt": "Role", "filters": [["name", "=", export_roles]]},
+    {"dt": "Custom HTML Block", "filters": [["name", "in", export_custom_html_blocks]]},
+    {"dt": "Workspace Sidebar", "filters": [["name", "in", export_workspace_sidebar]]},
+    # {"dt": "Workflow", "filters": [["name", "=", export_workflows]]},
+    # {"dt": "Workflow State", "filters": [["name", "in", export_workflow_state]]},
+    # {"dt": "Workflow Action Master", "filters": [["name", "in", export_workflow_action_master]]},
+
+    {"dt": "Dashboard", "filters": [["module", "in", export_modules]]},
+    {"dt": "Dashboard Chart", "filters": [["module", "in", export_modules]]},
+    {"dt": "Number Card", "filters": [["module", "in", export_modules]]},
+    
+    {"dt": "Notification", "filters": [["module", "in", export_modules]]},
+    # {"dt": "Letter Head", "filters": [["name", "=", export_letterhead]]},
+    {"dt": "Web Form", "filters": [["module", "in", export_modules]]},
+    {"dt": "Scheduled Job Type", "filters": [["method", "in", ["hrpro.hrpro.event.resume_parser.handle_communication_resume" ]]]},
+    {"dt": "Desktop Icon", "filters": [["name", "in", export_desktop_icon]]},
+]
 
 # Scheduled Tasks
 # ---------------
