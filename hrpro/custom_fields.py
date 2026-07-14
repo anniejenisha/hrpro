@@ -1,3 +1,4 @@
+
 def get_custom_fields():
     return {
 
@@ -88,11 +89,3 @@ def get_custom_fields():
          ],  
 
     }
-
-
-
-
-
-
-
-
