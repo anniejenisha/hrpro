@@ -153,7 +153,7 @@ after_migrate = ["hrpro.after_migrate.create_fields"]
 #fixtures
 
 export_modules = [
-    "HRPRO"
+    "HRPRO" , "HR"
 ]
 
 export_workspace_sidebar = ["HRPRO"]
