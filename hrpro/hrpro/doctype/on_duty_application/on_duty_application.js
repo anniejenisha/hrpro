@@ -71,5 +71,41 @@ frappe.ui.form.on("On Duty Application", {
             
         });
 
+    },
+    from_date(frm){
+        frappe.db.get_value(
+            "Shift Assignment",
+            {
+                employee: frm.doc.employee,
+                start_date: ["<=", frm.doc.from_date],
+                end_date: [">=", frm.doc.to_date],
+                docstatus: 1
+            },
+            ["shift_type"]
+        ).then(r => {
+            if (r.message && r.message.shift_type) {
+                frm.set_value("shift", r.message.shift_type);
+            } else {
+                frm.set_value("shift", "");
+            }
+        });
+    },
+    employee(frm){
+        frappe.db.get_value(
+            "Shift Assignment",
+            {
+                employee: frm.doc.employee,
+                start_date: ["<=", frm.doc.from_date],
+                end_date: [">=", frm.doc.to_date],
+                docstatus: 1
+            },
+            ["shift_type"]
+        ).then(r => {
+            if (r.message && r.message.shift_type) {
+                frm.set_value("shift", r.message.shift_type);
+            } else {
+                frm.set_value("shift", "");
+            }
+        });
     }
 });

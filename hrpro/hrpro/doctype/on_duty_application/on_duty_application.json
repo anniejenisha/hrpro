@@ -78,6 +78,7 @@
   {
    "fieldname": "days",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Total Number of Days",
    "read_only": 1
   },
@@ -134,8 +135,8 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-13 12:44:55.467469",
- "modified_by": "Administrator",
+ "modified": "2026-07-31 14:17:32.350235",
+ "modified_by": "anniejenisha.p@gmail.com",
  "module": "HRPRO",
  "name": "On Duty Application",
  "naming_rule": "Expression",
