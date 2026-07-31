@@ -1,0 +1,51 @@
+{
+ "app": "hrpro",
+ "creation": "2026-07-15 15:37:30.512483",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Biometric Portal",
+   "link_to": "facial-recognition",
+   "link_type": "Page",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Miss Punch Application",
+   "link_to": "Miss Punch Application",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "On Duty Application",
+   "link_to": "On Duty Application",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-22 14:29:27.518910",
+ "modified_by": "Administrator",
+ "module": "HRPRO",
+ "name": "HRPRO",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "HRPRO"
+}

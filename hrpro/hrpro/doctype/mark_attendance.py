@@ -25,8 +25,18 @@ from datetime import datetime, timedelta
 
 @frappe.whitelist()
 def mark_att_process():
-	from_date = add_days(today(),-2)  
-	to_date = today()
+	from_date ="2026-07-16" 
+	to_date = "2026-07-17"
+	dates = get_dates(from_date,to_date)
+	for date in dates:
+		from_date = add_days(date,0)
+		to_date = date
+		mark_att(from_date,to_date)
+		mark_wh(from_date,to_date)
+		mark_late_early(from_date,to_date)
+
+@frappe.whitelist()
+def attendance_settings(from_date,to_date):
 	dates = get_dates(from_date,to_date)
 	for date in dates:
 		from_date = add_days(date,0)
