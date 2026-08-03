@@ -28,9 +28,20 @@
    "link_type": "DocType",
    "show_arrow": 0,
    "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Permission Request",
+   "link_to": "Permission Request",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-08-03 13:34:34.029366",
+ "modified": "2026-08-03 13:55:24.578978",
  "modified_by": "anniejenisha.p@gmail.com",
  "module": "HRPRO",
  "name": "HRPRO",
