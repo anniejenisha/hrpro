@@ -8,17 +8,6 @@
   {
    "child": 0,
    "collapsible": 1,
-   "indent": 0,
-   "keep_closed": 0,
-   "label": "Biometric Portal",
-   "link_to": "facial-recognition",
-   "link_type": "Page",
-   "show_arrow": 0,
-   "type": "Link"
-  },
-  {
-   "child": 0,
-   "collapsible": 1,
    "icon": "list",
    "indent": 0,
    "keep_closed": 0,
@@ -41,8 +30,8 @@
    "type": "Link"
   }
  ],
- "modified": "2026-07-22 14:29:27.518910",
- "modified_by": "Administrator",
+ "modified": "2026-08-03 13:34:34.029366",
+ "modified_by": "anniejenisha.p@gmail.com",
  "module": "HRPRO",
  "name": "HRPRO",
  "owner": "Administrator",
