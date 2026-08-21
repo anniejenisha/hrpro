@@ -1,0 +1,26 @@
+{
+ "app": "hrpro",
+ "creation": "2026-08-21 17:38:30.508055",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Talent Management",
+   "link_to": "talent_management",
+   "link_type": "Page",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-08-21 17:38:30.508055",
+ "modified_by": "Administrator",
+ "name": "Talent Management",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "Talent Management"
+}
